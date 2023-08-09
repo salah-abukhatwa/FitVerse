@@ -14,11 +14,14 @@
     </mat-form-field>
     <mat-form-field>
       <mat-label>Your Birthdate</mat-label>
-      <input matInput [matDatepicker]="picker" [max]="maxDate">
+      <input matInput [matDatepicker]="picker" [max]="maxDate" ngModel required name="birthdate" >
       <mat-hint>MM/DD/YYYY</mat-hint>
       <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
+
+      <mat-checkbox labelPosition="before" color="primary" ngModel name="agree" required >Agree to Terms and Conditions.</mat-checkbox>
+
     <button mat-raised-button color="primary" type="submit">Submit</button>
   </form>
 </section>
