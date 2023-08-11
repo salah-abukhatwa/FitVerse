@@ -1,5 +1,5 @@
 <section  >
-  <form fxLayout="column" fxLayoutAlign="center center" #f="ngForm" (ngSubmit)="onSubmit(f)" >
+  <form fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center center" #f="ngForm" (ngSubmit)="onSubmit(f)" >
     <mat-form-field >
     <input matInput   placeholder="Ex. pat@example.com" type="email" email  required ngModel name="email" #emailInput="ngModel">
     <mat-error *ngIf="emailInput.hasError('required')">Field must not be empty</mat-error>
@@ -22,6 +22,6 @@
 
       <mat-checkbox labelPosition="before" color="primary" ngModel name="agree" required >Agree to Terms and Conditions.</mat-checkbox>
 
-    <button mat-raised-button color="primary" type="submit">Submit</button>
+    <button mat-raised-button color="primary" type="submit" [disabled]="f.invalid">Submit</button>
   </form>
 </section>
