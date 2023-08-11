@@ -18,3 +18,13 @@ a:active{
   padding: 0;
   margin: 0;
 }
+
+.nav-cption{
+  padding-left: 10px;
+  display: inline-block;
+}
+
+mat-list-item {
+  background-color: rgb(83 137 231 / 61%);
+}
+
