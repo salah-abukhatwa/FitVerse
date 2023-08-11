@@ -1,0 +1,15 @@
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: lightgray;
+}
+
+
+
+mat-list-item {
+  background-color: rgb(83 137 231 / 61%);
+}

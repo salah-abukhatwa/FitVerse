@@ -1,0 +1,21 @@
+a {
+  color: white;
+  text-decoration:none;
+  
+}
+
+.navitem {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-cption {
+  padding-left: 10px;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  color: lightgray;
+}

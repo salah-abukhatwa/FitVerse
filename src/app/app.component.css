@@ -4,27 +4,4 @@ mat-sidenav-container,mat-sidenav , mat-sidenav-content{
 mat-sidenav{
   width: 250px;
 }
-a {
-  color: white;
-  text-decoration: none;
-}
-a:hover,
-a:active{
-  color: lightgray;
-}
-
-.navitem{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-cption{
-  padding-left: 10px;
-  display: inline-block;
-}
-
-mat-list-item {
-  background-color: rgb(83 137 231 / 61%);
-}
 
