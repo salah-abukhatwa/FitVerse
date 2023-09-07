@@ -3,10 +3,10 @@
   <div><a routerLink="/">Logo</a></div>
   <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
     <ul fxLayout class="navitem" fxLayoutGap="10px">
-      <li><a routerLink="/signup">signup</a></li>
-      <li><a routerLink="/login">login</a></li>
-      <li><a routerLink="/training">training</a></li>
-      <li><a routerLink="/logout">Logout</a></li>
+      <li *ngIf="!isAuth"><a routerLink="/signup">signup</a></li>
+      <li *ngIf="!isAuth"><a routerLink="/login">login</a></li>
+      <li *ngIf="isAuth"><a routerLink="/training">training</a></li>
+      <li *ngIf="isAuth"><a routerLink="/logout" style="cursor: pointer;" (click)="onLogout()">Logout</a></li>
     </ul>
 
   </div>
