@@ -20,8 +20,6 @@ import { StopTrainingComponent } from './training/current-training/stop-training
 
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
