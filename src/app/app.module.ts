@@ -49,6 +49,6 @@ import { environment } from '../environments/environment';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents:[StopTrainingComponent]
+
 })
 export class AppModule { }
