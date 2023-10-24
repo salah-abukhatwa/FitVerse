@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, Router, RouterStateSnapshot, UrlTree } from '@angular/router';
+import { ActivatedRouteSnapshot, Route, Router, RouterStateSnapshot, UrlSegment, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
 import { AuthService } from './auth.service';
 
@@ -18,6 +18,17 @@ export class AuthGuard  {
       } else {
      return this.router.navigate(['/login'])
       }
+  }
+
+   canLoad(
+    route: Route,
+    segments: UrlSegment[]
+  ): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+    if (this.authService.isAuth()) {
+      return true;
+    } else {
+      return this.router.createUrlTree(['/login']);
+    }
   }
 
 }

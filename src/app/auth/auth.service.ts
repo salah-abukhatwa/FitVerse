@@ -5,6 +5,8 @@ import { Subject } from 'rxjs';
 import { Router } from '@angular/router';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { TrainingService } from '../training/training.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { UiService } from '../shared/ui.service';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +17,8 @@ export class AuthService {
 
   constructor(private router: Router,
     private afAuth: AngularFireAuth,
-    private trainingService: TrainingService) { }
+    private trainingService: TrainingService,
+    private uiService: UiService) { }
 
   initAuthListener() {
     this.afAuth.authState.subscribe(user => {
@@ -26,8 +29,8 @@ export class AuthService {
       } else {
         this.trainingService.cancelSubscriptons();
       this.authChange.next(false);
-      this.router.navigate(['/login']);
-      this.isAuthenticated = false;
+        this.isAuthenticated = false;
+        this.router.navigate(['/login']);
       }
     });
     }
@@ -35,21 +38,30 @@ export class AuthService {
   registerUser(authData: AuthData) {
     this.afAuth.createUserWithEmailAndPassword(authData.email, authData.password)
       .then(result => {
-        console.log(result);
+      this.uiService.loadingStateChanged.next(true);
+      })
+      .catch(error => {
+        this.uiService.showSnackbar(error.message , null , 3000)
+
+        this.uiService.loadingStateChanged.next(false);
 
       })
-      .catch(error => { console.log(error); })
 
 
   }
 
-    login(authData:AuthData){
+  login(authData: AuthData) {
+    this.uiService.loadingStateChanged.next(true);
       this.afAuth.signInWithEmailAndPassword(authData.email, authData.password)
         .then(result => {
-          console.log(result);
+              this.uiService.loadingStateChanged.next(false);
 
       })
-      .catch(error => { console.log(error); })
+        .catch(error => {
+         this.uiService.showSnackbar(error.message , null , 3000)
+                        this.uiService.loadingStateChanged.next(false);
+
+        })
 
           };
 
