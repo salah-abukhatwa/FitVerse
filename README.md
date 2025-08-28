@@ -18,7 +18,7 @@ Email/Password Authentication: Sign up and log in with Firebase Authentication.
 Angular (Frontend framework).
 Angular Material (UI components and styling).
 Angular Fire (Firebase integration for Angular)
-Firebase (Cloud database and authentication service)
+Firebase (Cloud Firestore database and authentication service)
 
 ## Screenshots
 
