@@ -1,27 +1,25 @@
 # FitVerse
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.8.
+FitVerse is a modern web application designed to help users track their workouts, stay motivated, and monitor progress over time. With Firebase as the backend and Angular Material for a sleek UI, this app delivers a smooth and engaging fitness experience.
 
-## Development server
+## Key Features
+User Authentication: Sign up with email and password, confirm your birthdate via a date picker, and agree to terms and conditions before getting started.
+Secure Login: Log in easily and securely to access your fitness dashboard.
+Exercise Selection: Browse and choose from a list of exercises dynamically fetched from the server.
+Workout Tracking: Start workouts, track progress, and cancel them anytime if needed.
+History & Analytics: View all past exercises with filtering and sorting options for better insights.
+Responsive UI: Built with Angular Material for a modern, responsive, and user-friendly interface.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Authentication
+Email/Password Authentication: Sign up and log in with Firebase Authentication.
 
-## Code scaffolding
+## Technologies
+Angular (Frontend framework).
+Angular Material (UI components and styling).
+Angular Fire (Firebase integration for Angular)
+Firebase (Cloud database and authentication service)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Screenshots
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
