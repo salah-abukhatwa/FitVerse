@@ -9,7 +9,7 @@ FitVerse is a modern web application designed to help users track their workouts
 - **History & Analytics**: View all past exercises with filtering and sorting options for better insights.
 - **Responsive UI**: Built with Angular Material for a modern, responsive, and user-friendly interface.
 
-## Authentication
+🔐## Authentication
 - **Email/Password Authentication**: Sign up and log in with Firebase Authentication.
 
 ## Technologies
