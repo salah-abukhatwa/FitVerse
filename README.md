@@ -1,6 +1,4 @@
 # FitVerse
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.8.
 FitVerse is a modern web application designed to help users track their workouts, stay motivated, and monitor progress over time. With Firebase as the backend and Angular Material for a sleek UI, this app delivers a smooth and engaging fitness experience.
 
 ## Key Features
@@ -22,4 +20,4 @@ Firebase (Cloud Firestore database and authentication service)
 
 ## Screenshots
 
-
+This project was generated with [Angular CLI] version 15.2.8.
