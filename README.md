@@ -1,6 +1,8 @@
 # FitVerse
 FitVerse is a modern web application designed to help users track their workouts, stay motivated, and monitor progress over time. With Firebase as the backend and Angular Material for a sleek UI, this app delivers a smooth and engaging fitness experience.
 
+**Live Demo:** [https://fitverse-4f9f7.web.app](https://fitverse-4f9f7.web.app)
+
 ## Key Features
 - **User Authentication**: Sign up with email and password, confirm your birthdate via a date picker, and agree to terms and conditions before getting started.
 - **Secure Login**: Log in easily and securely to access your fitness dashboard.
